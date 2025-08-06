@@ -1,0 +1,66 @@
+# ============================================================================
+# ING Content Intelligence Dashboard - Updated Dependencies
+# ============================================================================
+
+# ───────── Core FastHTML & MonsterUI ─────────
+python-fasthtml>=0.6.0
+monsterui>=0.3.0
+uvicorn[standard]>=0.24.0
+python-multipart>=0.0.6
+
+# ───────── LangGraph & LLM Orchestration ─────────
+langgraph>=0.2.0
+langchain>=0.2.0
+langchain-openai>=0.1.0
+
+# ───────── Azure AI & OpenAI ─────────
+openai>=1.12.0
+azure-ai-textanalytics>=5.3.0
+azure-identity>=1.15.0
+
+# ───────── HTTP & API Clients ─────────
+aiohttp>=3.9.0
+httpx>=0.26.0
+requests>=2.31.0
+
+# ───────── RSS Feed Processing ─────────
+feedparser>=6.0.10
+python-dateutil>=2.8.0
+
+# ───────── Database & Storage ─────────
+sqlalchemy>=2.0.0
+aiosqlite>=0.19.0
+redis>=5.0.0
+
+# ───────── Data Processing ─────────
+pandas>=2.1.0
+numpy>=1.24.0
+pydantic>=2.5.0
+pydantic-settings>=2.1.0
+
+# ───────── Environment & Configuration ─────────
+python-dotenv>=1.0.0
+
+# ───────── Text Processing ─────────
+beautifulsoup4>=4.12.0
+textstat>=0.7.0
+
+# ───────── Async & Performance ─────────
+asyncio-throttle>=1.0.2
+aiocache>=0.12.0
+
+# ───────── Monitoring & Logging ─────────
+structlog>=23.2.0
+
+# ───────── Web Scraping (for SERP data) ─────────
+scrapy>=2.11.0
+selenium>=4.15.0
+
+# ───────── Testing ─────────
+pytest>=7.4.0
+pytest-asyncio>=0.21.0
+pytest-mock>=3.12.0
+
+# ───────── Development Tools ─────────
+black>=23.11.0
+pre-commit>=3.6.0

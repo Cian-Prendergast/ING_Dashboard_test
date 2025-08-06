@@ -1,0 +1,139 @@
+/* ING Brand Colors and Custom Styling */
+:root {
+    --ing-orange: #ff6200;
+    --ing-orange-dark: #e55a00;
+    --ing-blue: #233142;
+    --ing-blue-light: #364357;
+    --ing-success: #12b981;
+    --ing-warning: #f59e0b;
+    --ing-error: #ef4444;
+}
+
+/* ING Brand Button Styles */
+.btn-ing-primary {
+    background-color: var(--ing-orange);
+    border-color: var(--ing-orange);
+    color: white;
+    font-weight: 600;
+}
+
+.btn-ing-primary:hover {
+    background-color: var(--ing-orange-dark);
+    border-color: var(--ing-orange-dark);
+    transform: translateY(-1px);
+    box-shadow: 0 4px 12px rgba(255, 98, 0, 0.3);
+}
+
+.btn-ing-secondary {
+    background-color: var(--ing-blue);
+    border-color: var(--ing-blue);
+    color: white;
+}
+
+.btn-ing-secondary:hover {
+    background-color: var(--ing-blue-light);
+    border-color: var(--ing-blue-light);
+}
+
+/* ING Card Styling */
+.ing-metric-card {
+    border: 1px solid #e5e7eb;
+    border-radius: 8px;
+    transition: all 0.2s ease;
+}
+
+.ing-metric-card:hover {
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    border-color: var(--ing-orange);
+}
+
+.ing-card-news {
+    border-left: 4px solid var(--ing-orange);
+}
+
+.ing-card-geo {
+    border-left: 4px solid var(--ing-blue);
+}
+
+.ing-card-content {
+    border-left: 4px solid var(--ing-success);
+}
+
+.ing-card-competitive {
+    border-left: 4px solid var(--ing-warning);
+}
+
+/* Progress Bar Styling */
+.progress-ing {
+    accent-color: var(--ing-orange);
+}
+
+/* News Item Styling */
+.ing-news-item {
+    transition: all 0.2s ease;
+    border: 1px solid #f3f4f6;
+    border-radius: 6px;
+}
+
+.ing-news-item:hover {
+    background-color: #fff7ed;
+    border-color: var(--ing-orange);
+    transform: translateY(-1px);
+}
+
+/* GEO Card Styling */
+.ing-geo-card {
+    border: 1px solid #e5e7eb;
+    border-radius: 6px;
+    transition: all 0.2s ease;
+}
+
+.ing-geo-card:hover {
+    box-shadow: 0 2px 8px rgba(35, 49, 66, 0.1);
+    border-color: var(--ing-blue);
+}
+
+/* Loading States */
+.htmx-indicator {
+    opacity: 0;
+    transition: opacity 200ms ease-in;
+}
+
+.htmx-request .htmx-indicator {
+    opacity: 1;
+}
+
+.htmx-request.htmx-indicator {
+    opacity: 1;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .ing-metric-card {
+        margin-bottom: 1rem;
+    }
+    
+    .dashboard-grid {
+        grid-template-columns: 1fr;
+        gap: 1rem;
+    }
+}
+
+/* Animation Classes */
+.fade-in {
+    animation: fadeIn 0.3s ease-in;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(10px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+.slide-up {
+    animation: slideUp 0.3s ease-out;
+}
+
+@keyframes slideUp {
+    from { transform: translateY(20px); opacity: 0; }
+    to { transform: translateY(0); opacity: 1; }
+}

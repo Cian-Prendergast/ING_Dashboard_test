@@ -1,0 +1,52 @@
+# ING Content Intelligence Dashboard
+
+## Quick Start
+
+1. **Environment Setup**:
+   ```bash
+   cp .env.example .env
+   # Edit .env with your Azure AI Foundry credentials
+   ```
+
+2. **Install Dependencies**:
+   ```bash
+   pip install -r requirements.txt
+   ```
+
+3. **Run Dashboard**:
+   ```bash
+   python run.py
+   ```
+
+4. **Access Dashboard**:
+   ```
+   http://localhost:8000
+   ```
+
+## Architecture Overview
+
+- **LangGraph Workflows**: Orchestrate LLM agents for complex tasks
+- **Azure AI Foundry**: GPT-4o-mini for cost-effective intelligence
+- **MonsterUI**: Professional dashboard with ING branding
+- **Real-time Intelligence**: RSS feeds + SERP monitoring + AI Overview optimization
+
+## Key Features
+
+- 📰 **News Intelligence**: Auto-analyze RSS feeds for content opportunities
+- 🎯 **GEO Optimization**: AI Overview inclusion optimization using LLM reasoning
+- 📝 **Content Generation**: Brand-compliant article creation
+- 📊 **SERP Tracking**: SerpBear integration for keyword monitoring
+- 🔄 **Real-time Updates**: Live dashboard with HTMX updates
+
+## Workflow Architecture
+
+1. **News Intelligence Workflow**: RSS → Relevance Analysis → Intent Extraction → Opportunity Identification
+2. **GEO Optimization Workflow**: Keyword Analysis → Competitor Research → Content Evaluation → Optimization Strategy
+3. **Content Generation Workflow**: Brief Creation → Content Generation → Brand Validation → SEO Optimization
+
+## Development
+
+- **Add new prompts**: Create `.txt` files in `prompts/` directory
+- **Add new agents**: Implement in `agents/` with prompt loading
+- **Add new workflows**: Create LangGraph workflows in `workflows/`
+- **Customize UI**: Modify MonsterUI components in `ui/`
